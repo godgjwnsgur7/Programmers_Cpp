@@ -19,16 +19,19 @@ int solution(string s)
 
     for (int i = 0; i < s.size(); i++)
     {
+        // else 경우를 제외한 나머지엔 s[i]를 push
         if (sta_str.empty() || sta_str.top() != s[i])
         {
             sta_str.push(s[i]);
         }
+        // 스택 top 값 == s[i] => top값 pop
         else
         {
             sta_str.pop();
         }
     }
 
+    // 스택이 비어있다면 모든 문자열 제거 가능
     if (sta_str.empty())
     {
         answer = 1;
