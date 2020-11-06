@@ -14,7 +14,7 @@ using namespace std;
 
 bool check(const string a, const string b)
 {
-    return a + b > b + a;
+    return a + b > b + a; // 정렬 조건 설정
 }
 
 string solution(vector<int> numbers)
@@ -26,20 +26,20 @@ string solution(vector<int> numbers)
 
     for (int i = 0; i < size; i++)
     {
-        str.push_back(to_string(numbers[i]));
+        str.push_back(to_string(numbers[i])); // 벡터 문자열로 저장
     }
 
-    sort(str.begin(), str.end(), check);
+    sort(str.begin(), str.end(), check); // 풀이
     size = str.size();
 
-    if (str[0] == "0")
+    if (str[0] == "0") // 벡터의 정수들이 모두 0일 경우 0을 리턴
     {
         return "0";
     }
 
     for (int i = 0; i < size; i++)
     {
-        answer += str[i];
+        answer += str[i]; // 벡터 문자열을 answer에 순서대로 대입
     }
 
     return answer;
