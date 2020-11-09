@@ -17,39 +17,28 @@ using namespace std;
 vector<int> solution(int n, vector<string> words)
 {
     vector<int> answer;
-    int chack = 0;
-    int number = 0;
-    int turn = 0;
-
-    for (int i = 1; i < words.size(); i++)
+    int i, j;
+    for (i = 1; i < words.size(); i++)
     {
-        string str1 = words[i - 1];
-        string str2 = words[i];
-
-        for (int j = 0; j < i; j++)
+        if (words[i - 1][words[i - 1].size() - 1] != words[i][0])
+            break;
+        for (j = 0; j < i; j++)
         {
-            if (words[j] == words[i])
-            {
-                chack = 1;
+            if (words[j].compare(words[i]) == 0)
                 break;
-            }
         }
-
-        int len_str1 = str1.length();
-
-        if (str1[len_str1 - 1] != str2[0])
-            chack = 1;
-
-        if (chack)
-        {
-            number = (i % n) + 1;
-            turn = (i / n) + 1;
-            answer.push_back(number);
-            answer.push_back(turn);
-            return answer;
-        }
+        if (j != i)
+            break;
     }
-    answer.push_back(0);
-    answer.push_back(0);
+    if (i == words.size())
+    {
+        answer.push_back(0);
+        answer.push_back(0);
+    }
+    else
+    {
+        answer.push_back(i % n + 1);
+        answer.push_back(i / n + 1);
+    }
     return answer;
 }
