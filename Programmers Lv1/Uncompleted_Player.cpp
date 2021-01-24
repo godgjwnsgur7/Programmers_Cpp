@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -34,4 +35,13 @@ string solution(vector<string> participant, vector<string> completion)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    vector<string> partcipant{"leo", "kiki", "eden"};
+    vector<string> completion{"eden", "kiki"};
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(partcipant, completion);
+    return 0;
 }

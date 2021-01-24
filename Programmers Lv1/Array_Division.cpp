@@ -36,3 +36,18 @@ vector<int> solution(vector<int> arr, int divisor)
 
     return answer;
 }
+
+int main(void)
+{
+    vector<int> arr{5, 9, 7, 10};
+    int divisor = 5;
+
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<int> result = solution(arr, divisor);
+
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
+}

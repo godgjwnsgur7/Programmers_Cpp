@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -31,4 +32,16 @@ vector<int> solution(vector<int> numbers)
     answer.erase(unique(answer.begin(), answer.end()), answer.end());
 
     return answer;
+}
+
+int main(void)
+{
+    vector<int> numbers{2, 1, 3, 4, 1};
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<int> result = solution(numbers);
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -50,4 +51,13 @@ int solution(string skill, vector<string> skill_trees)
         }
     }
     return answer;
+}
+
+int main(void)
+{
+    string skill = "CBD";
+    vector<string> skill_trees{"BACDE", "CBADF", "AECB", "BDA"};
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(skill, skill_trees);
+    return 0;
 }

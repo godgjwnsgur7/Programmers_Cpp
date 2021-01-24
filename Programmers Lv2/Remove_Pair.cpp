@@ -38,3 +38,11 @@ int solution(string s)
     }
     return answer;
 }
+
+int main(void)
+{
+    string s = "baabaa";
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(s);
+    return 0;
+}

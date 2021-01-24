@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -25,4 +26,18 @@ vector<int> solution(int n, int m)
     answer.push_back(gcd);
     answer.push_back(m * n / gcd);
     return answer;
+}
+
+int main(void)
+{
+    int n = 3;
+    int m = 12;
+
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<int> result = solution(n, m);
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
 }

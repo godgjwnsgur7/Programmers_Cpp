@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -33,4 +34,16 @@ vector<int> solution(vector<int> arr)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    vector<int> arr{4, 3, 2, 1};
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<int> result = solution(arr);
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
 }

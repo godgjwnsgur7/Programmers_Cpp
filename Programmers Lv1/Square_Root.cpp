@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <cmath>
@@ -27,4 +28,12 @@ long long solution(long long n)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    long long n = 121;
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(n);
+    return 0;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -18,4 +19,12 @@ string solution(string s)
 
     answer = s;
     return answer;
+}
+
+int main(void)
+{
+    string s = "Zbcdefg";
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(s);
+    return 0;
 }

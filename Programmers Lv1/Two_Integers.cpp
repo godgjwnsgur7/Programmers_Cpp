@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -27,4 +28,13 @@ long long solution(int a, int b)
         answer += i;
     }
     return answer;
+}
+
+int main(void)
+{
+    int a = 3;
+    int b = 5;
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(a, b);
+    return 0;
 }

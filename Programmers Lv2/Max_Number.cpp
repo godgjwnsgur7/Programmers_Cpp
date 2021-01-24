@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -43,4 +44,12 @@ string solution(vector<int> numbers)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    vector<int> numbers{6, 10, 2};
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(numbers);
+    return 0;
 }

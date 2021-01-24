@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -31,4 +32,12 @@ string solution(int n)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    int n = 3;
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(n);
+    return 0;
 }

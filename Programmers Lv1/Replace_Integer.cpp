@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -12,4 +13,12 @@ int solution(string s)
     int answer = atoi(s.c_str());
 
     return answer;
+}
+
+int main(void)
+{
+    string s = "1234";
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(s);
+    return 0;
 }

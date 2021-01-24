@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -41,4 +42,17 @@ vector<int> solution(int n, vector<string> words)
         answer.push_back(i / n + 1);
     }
     return answer;
+}
+
+int main(void)
+{
+    int n = 3;
+    vector<string> words{"tank, kick, know, wheel, land, dream, mother, robot, tank"};
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<int> result = solution(n, words);
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
 }

@@ -39,9 +39,8 @@ string solution(int n)
 
 int main(void)
 {
-    int n = 0;
-    cout << "124나라의 수로 바꿀 자연수 : ";
-    cin >> n;
-    cout << solution(n);
+    int n = 4;
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(n);
     return 0;
 }

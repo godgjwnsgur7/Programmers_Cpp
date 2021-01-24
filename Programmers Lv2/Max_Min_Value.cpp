@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -36,4 +37,12 @@ string solution(string s)
     answer += to_string(arr.front()) + ' ' + to_string(arr.back());
 
     return answer;
+}
+
+int main(void)
+{
+    string s = "1 2 3 4";
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(s);
+    return 0;
 }

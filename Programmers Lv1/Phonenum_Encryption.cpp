@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -26,4 +27,12 @@ string solution(string phone_number)
         }
     }
     return answer;
+}
+
+int main(void)
+{
+    string phone_number = "01044447777";
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(phone_number);
+    return 0;
 }

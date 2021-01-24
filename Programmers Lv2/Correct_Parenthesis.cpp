@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <iostream>
 
@@ -36,4 +37,12 @@ bool solution(string s)
         return false;
 
     return answer;
+}
+
+int main(void)
+{
+    string s = ")()()(";
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(s);
+    return 0;
 }

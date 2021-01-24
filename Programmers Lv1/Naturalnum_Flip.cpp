@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -24,4 +25,16 @@ vector<int> solution(long long n)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    long long n = 12345;
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<int> result = solution(n);
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
 }

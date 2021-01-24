@@ -42,3 +42,12 @@ int solution(vector<int> d, int budget)
 
     return answer;
 }
+
+int main(void)
+{
+    vector<int> d{1, 3, 2, 5, 4};
+    int budget = 9;
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(d, budget);
+    return 0;
+}

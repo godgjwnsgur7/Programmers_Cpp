@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -21,4 +22,12 @@ double solution(vector<int> arr)
     answer = total / size;
 
     return answer;
+}
+
+int main(void)
+{
+    vector<int> arr{1, 2, 3, 4};
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(arr);
+    return 0;
 }

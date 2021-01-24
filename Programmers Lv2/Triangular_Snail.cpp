@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -107,4 +108,16 @@ vector<int> solution(int n)
     delete[] arr;
 
     return answer;
+}
+
+int main(void)
+{
+    int n = 4;
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<int> result = solution(n);
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
 }

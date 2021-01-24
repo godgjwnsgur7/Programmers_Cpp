@@ -1,10 +1,11 @@
 #include <string>
 #include <vector>
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-/* 문제 - 
+/* 문제 - 모의고사
 수포자는 수학을 포기한 사람의 준말입니다. 수포자 삼인방은 모의고사에 수학 문제를 전부 찍으려 합니다. 
 수포자는 1번 문제부터 마지막 문제까지 다음과 같이 찍습니다.
 
@@ -52,4 +53,16 @@ vector<int> solution(vector<int> answers)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    vector<int> answers{1, 2, 3, 4, 5};
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<int> result = solution(answers);
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
 }

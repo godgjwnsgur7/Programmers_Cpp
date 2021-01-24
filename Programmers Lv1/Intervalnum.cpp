@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -22,4 +23,17 @@ vector<long long> solution(int x, int n)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    int x = 2;
+    int n = 5;
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<long long> result = solution(x, n);
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
 }

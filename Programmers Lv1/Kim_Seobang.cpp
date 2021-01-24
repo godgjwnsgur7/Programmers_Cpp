@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -27,4 +28,12 @@ string solution(vector<string> seoul)
     answer = "김서방은 " + to_string(count) + "에 있다";
 
     return answer;
+}
+
+int main(void)
+{
+    vector<string> seoul{"Jane", "Kim"};
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(seoul);
+    return 0;
 }

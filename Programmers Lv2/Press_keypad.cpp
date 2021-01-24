@@ -89,16 +89,11 @@ string solution(vector<int> numbers, string hand)
 
 int main(void)
 {
-    int arr[] = {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
-    vector<int> numbers;
-    for (int i = 0; i < 11; i++)
-    {
-        numbers.push_back(arr[i]);
-    }
-
+    vector<int> numbers{1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
     string hand = "right";
 
-    cout << solution(numbers, hand);
+    cout << "테스트코드 실행 결과" << endl
+         << solution(numbers, hand);
 
     return 0;
 }

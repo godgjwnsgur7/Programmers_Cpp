@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -56,4 +57,12 @@ string solution(string s)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    string s = "try hello world";
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(s);
+    return 0;
 }

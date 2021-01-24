@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -29,4 +30,13 @@ int solution(vector<int> A, vector<int> B)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    vector<int> A{1, 4, 2};
+    vector<int> B{5, 4, 4};
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(A, B);
+    return 0;
 }

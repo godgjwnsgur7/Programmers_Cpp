@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -30,4 +31,12 @@ bool solution(int x)
     }
 
     return answer;
+}
+
+int main(void)
+{
+    int x = 10;
+    cout << "테스트 코드 실행 결과" << endl
+         << solution(x);
+    return 0;
 }

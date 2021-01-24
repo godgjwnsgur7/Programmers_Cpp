@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -34,4 +35,17 @@ vector<string> solution(vector<string> strings, int n)
     sort(strings.begin(), strings.end(), Checking);
 
     return strings;
+}
+
+int main(void)
+{
+    vector<string> strings = {"sum", "bed", "car"};
+    int n = 1;
+    cout << "테스트 코드 실행 결과" << endl;
+    vector<string> result = solution(strings, n);
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    return 0;
 }
