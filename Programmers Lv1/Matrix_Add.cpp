@@ -37,7 +37,7 @@ int main(void)
     vector<vector<int>> result = solution(arr1, arr2);
     for (int i = 0; i < result.size(); i++)
     {
-        for (int j = 0; j < result.size(); j++)
+        for (int j = 0; j < result[0].size(); j++)
         {
             cout << result[i][j] << " ";
         }
