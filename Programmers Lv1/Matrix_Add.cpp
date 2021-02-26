@@ -31,8 +31,8 @@ vector<vector<int>> solution(vector<vector<int>> arr1, vector<vector<int>> arr2)
 
 int main(void)
 {
-    vector<vector<int>> arr1{{1, 2}, {2, 3}};
-    vector<vector<int>> arr2{{3, 4}, {5, 6}};
+    vector<vector<int>> arr1{{1, 2}, {3, 2}};
+    vector<vector<int>> arr2{{3, 2}, {1, 2}};
     cout << "테스트 코드 실행 결과" << endl;
     vector<vector<int>> result = solution(arr1, arr2);
     for (int i = 0; i < result.size(); i++)
