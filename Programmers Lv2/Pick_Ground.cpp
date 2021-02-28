@@ -19,11 +19,11 @@ using namespace std;
 
 int Max_Check(vector<int> &_land, int _index)
 {
-    int pos = 0;
+    int temp = 0;
     for (int i = 0; i < 4; i++)
         if (i != _index)
-            pos = max(pos, _land[i]);
-    return pos;
+            temp = max(temp, _land[i]);
+    return temp;
 }
 
 int solution(vector<vector<int>> land)
