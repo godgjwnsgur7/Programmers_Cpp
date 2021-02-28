@@ -17,11 +17,11 @@ using namespace std;
 점수 : 100 이하의 자연수
 */
 
-int Max_Check(vector<int> &_land, int _index)
+int Max_Check(vector<int> &_land, int pos)
 {
     int temp = 0;
     for (int i = 0; i < 4; i++)
-        if (i != _index)
+        if (i != pos)
             temp = max(temp, _land[i]);
     return temp;
 }
